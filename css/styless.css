@@ -166,9 +166,26 @@ footer img {
     flex-direction: column;
     align-items: center;
     
+    article button {
+    width: 70%;
+    margin: 5px;
+    background-color: #cfcecd;
+    border-radius: 3px;
+    border: solid 2px;
+ }
+ 
 }
 
 }
 main {
+    background-color: #754D1F;
+}
+header {
+    background-color: #754D1F;
+}
+head {
+    background-color: #754D1F;
+}
+footer {
     background-color: #754D1F;
 }
