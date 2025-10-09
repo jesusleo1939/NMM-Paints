@@ -154,3 +154,6 @@ footer {
 section {
     background-color: #754D1F;
 } 
+.menu-grad {
+    background: linear-gradient(161deg, #754D1F 0%, #825C24 50%, #CAAE22 100%);
+}
