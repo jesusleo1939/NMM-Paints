@@ -1,0 +1,12 @@
+@import url(_variables.scss);
+@import url(_estilosglobales.scss);
+
+// ===== Footer =====
+footer {
+    background-color: $color-fondo;
+    padding: 10px;
+
+  img {
+    width: 16px;
+  }
+}

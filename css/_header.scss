@@ -1,0 +1,32 @@
+@import url(_variables.scss);
+@import url(_estilosglobales.scss);
+// ===== Header =====
+header {
+  margin: 0 15px 15px 0;
+  padding: 15px;
+}
+
+// ===== Navbar =====
+.navbar {
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+
+    @media (max-width: 425px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

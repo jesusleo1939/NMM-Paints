@@ -10,6 +10,7 @@
 </head>
 <body>
 <header>
+  <h1 class="menu-inicio">Contacto</h1>
 <nav class="navbar navbar-expand-lg fondoNav">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +42,53 @@
 </nav>   
  </header>   
 <!--Ejemplo en lo que se crea un formulario mas profesional-->
-<main><label for="mensaje"></label>
-    <textarea name="mensaje" id="mensaje"></textarea> 
-    <input type="submit" value="Enviar">    
+<main>
+  <body class="bg-custom" >
 
-<h1>Contactanos al sig numero 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="contact-form">
+          <h2>📨 Contáctanos</h2>
 
-        5548926628
-    </h1>
+          <form id="formContacto" novalidate>
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+              <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+            </div>
+
+            <!-- Correo -->
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+              <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+            </div>
+
+            <!-- Asunto -->
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Tipo de trabajo</label>
+              <input type="text" class="form-control" id="asunto" placeholder="Tipo de trabajo" required>
+              <div class="invalid-feedback">Por favor, indica el tipo de trabajo.</div>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Caracteristicas</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+              <div class="invalid-feedback">Por favor, indica cuantas miniaturas van a ser pintadas asi como alguna caracteristica especial.</div>
+            </div>
+
+            <!-- Botón -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-custom btn-lg">Enviar Mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer>
