@@ -1,59 +1,7 @@
-@import url(_estilosglobales.scss);
-@import url(_footer.scss);
-@import url(_header.scss);
 // ===== Variables =====
 $color-fondo: #754D1F;
 $color-secundario: #825C24;
-$color-acento: #caae22;
+$color-acento: #CAAE22;
 $color-texto: #161310;
 $color-texto-sec: #25120A;
-$color-gradiente:linear-gradient(161deg, #754D1F 0%, #825C24 50%, #CAAE22 100%);
-
-// ===== Imágenes =====
-img {
-  width: 100%;
-}
-// ===== Artículos =====
-article {
-  width: 30%;
-  padding: 10px;
-  border: solid 3px $color-secundario;
-  border-radius: 10px;
-  margin: 10px;
-
-  button {
-    @include boton-estilo();
-  }
-}
-
-// ===== Padre de Cards =====
-.PadreCardsIndex {
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: 425px) {
-    flex-direction: column;
-    align-items: center;
-
-    article {
-      button {
-        @include boton-estilo($ancho: 70%);
-      }
-    }
-  }
-}
-// ===== Iconos =====
-.icono {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-// ===== Banner Section =====
-.sectionbanerindex {
-  padding: 10px;
-}
-// ===== Menú =====
-.menu-inicio {
-  color: #A9921F;
-  text-align: center;
-}
+$color-borde: #443B10;

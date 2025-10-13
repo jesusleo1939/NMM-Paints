@@ -1,0 +1,168 @@
+@import "variables";
+
+// ===== Mixins =====
+@mixin boton-estilo($color: $color-secundario, $color-texto: #fff) {
+  background-color: $color;
+  color: $color-texto;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 250ms ease, transform 150ms ease;
+
+  &:hover {
+    background-color: lighten($color, 10%);
+    transform: translateY(-3px);
+  }
+}
+
+// ===== Global =====
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, header, main, footer, section, head {
+  background-color: $color-fondo;
+}
+
+h1, h2 {
+  color: $color-texto;
+  text-align: center;
+}
+
+h3, h4 {
+  color: $color-texto-sec;
+  text-align: center;
+  font-size: large;
+}
+
+// ===== Estructura General =====
+.caja {
+  width: 50%;
+  height: 50vh;
+  background-color: $color-fondo;
+  border: 2px solid $color-borde;
+  text-align: center;
+}
+
+.fondoNav {
+  background-color: $color-secundario;
+}
+
+.botonbusqueda {
+  background-color: $color-acento;
+  color: $color-acento;
+}
+
+// ===== Navbar =====
+.navbar {
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+
+    @media (max-width: 425px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// ===== Menu =====
+.menu-inicio {
+  color: #A9921F;
+  text-align: center;
+}
+
+// ===== Article y Cards =====
+article {
+  width: 30%;
+  padding: 10px;
+  border: solid 3px $color-secundario;
+  border-radius: 10px;
+  margin: 10px;
+
+  button {
+    @include boton-estilo(#cfcecd, #000);
+    width: 20%;
+    margin: 5px;
+  }
+}
+
+.PadreCardsIndex {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+
+    article {
+      button {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// ===== Footer =====
+footer {
+  padding: 10px;
+
+  img {
+    width: 16px;
+  }
+}
+
+// ===== Iconos =====
+.icono {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.iconos {
+  padding-bottom: 5%;
+}
+
+// ===== Gradientes =====
+.menu-grad {
+  background: linear-gradient(161deg, $color-fondo 0%, $color-secundario 50%, $color-acento 100%);
+}
+
+// ===== Botones =====
+.boton {
+  @include boton-estilo($color-secundario);
+}
+
+// ===== Imágenes =====
+img {
+  width: 100%;
+}
+
+// ===== Banner =====
+.sectionbanerindex {
+  padding: 10px;
+}
+
+// ===== Media Queries =====
+@media (max-width: 425px) {
+  .navbar a {
+    display: flex;
+    align-items: center;
+  }
+}

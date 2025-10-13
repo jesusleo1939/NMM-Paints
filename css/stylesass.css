@@ -1,6 +1,156 @@
-@import url(_variables.scss);
-@import url(_estilosglobales.scss);
-@import url(_header.scss);
-@import url(_footer.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, header, main, footer, section, head {
+  background-color: #754D1F;
+}
+
+h1, h2 {
+  color: #161310;
+  text-align: center;
+}
+
+h3, h4 {
+  color: #25120A;
+  text-align: center;
+  font-size: large;
+}
+
+.caja {
+  width: 50%;
+  height: 50vh;
+  background-color: #754D1F;
+  border: 2px solid #443B10;
+  text-align: center;
+}
+
+.fondoNav {
+  background-color: #825C24;
+}
+
+.botonbusqueda {
+  background-color: #CAAE22;
+  color: #CAAE22;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+@media (max-width: 425px) {
+  .navbar a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-inicio {
+  color: #A9921F;
+  text-align: center;
+}
+
+article {
+  width: 30%;
+  padding: 10px;
+  border: solid 3px #825C24;
+  border-radius: 10px;
+  margin: 10px;
+}
+article button {
+  background-color: #cfcecd;
+  color: #000;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 250ms ease, transform 150ms ease;
+}
+article button:hover {
+  background-color: rgb(231.9795918367, 231.5, 231.0204081633);
+  transform: translateY(-3px);
+}
+article button {
+  width: 20%;
+  margin: 5px;
+}
+
+.PadreCardsIndex {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .PadreCardsIndex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .PadreCardsIndex article button {
+    width: 70%;
+  }
+}
+
+footer {
+  padding: 10px;
+}
+footer img {
+  width: 16px;
+}
+
+.icono {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.iconos {
+  padding-bottom: 5%;
+}
+
+.menu-grad {
+  background: linear-gradient(161deg, #754D1F 0%, #825C24 50%, #CAAE22 100%);
+}
+
+.boton {
+  background-color: #825C24;
+  color: #fff;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 250ms ease, transform 150ms ease;
+}
+.boton:hover {
+  background-color: rgb(169.9397590361, 120.265060241, 47.0602409639);
+  transform: translateY(-3px);
+}
+
+img {
+  width: 100%;
+}
+
+.sectionbanerindex {
+  padding: 10px;
+}
+
+@media (max-width: 425px) {
+  .navbar a {
+    display: flex;
+    align-items: center;
+  }
+}
 
 /*# sourceMappingURL=stylesass.css.map */
