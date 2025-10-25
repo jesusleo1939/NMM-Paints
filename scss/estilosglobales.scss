@@ -57,6 +57,9 @@ h3, h4 {
   color: $color-acento;
 }
 
+.bienve-index {
+  color: $color-acento;
+}
 // ===== Navbar =====
 .navbar {
   ul {
@@ -95,6 +98,7 @@ article {
   border: solid 3px $color-secundario;
   border-radius: 10px;
   margin: 10px;
+ 
 
   button {
     @include boton-estilo(#cfcecd, #000);
@@ -113,11 +117,14 @@ article {
 
     article {
       button {
+        justify-content: center;
+        align-content: center;
         width: 70%;
       }
     }
   }
 }
+
 
 // ===== Footer =====
 footer {

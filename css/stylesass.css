@@ -36,6 +36,10 @@ h3, h4 {
   color: #CAAE22;
 }
 
+.bienve-index {
+  color: #CAAE22;
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -98,6 +102,8 @@ article button {
     align-items: center;
   }
   .PadreCardsIndex article button {
+    justify-content: center;
+    align-content: center;
     width: 70%;
   }
 }
